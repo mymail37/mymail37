@@ -1,0 +1,334 @@
+/* general setup */
+
+* {
+   padding: 0;
+   margin: 0;
+}
+
+img {
+   max-width: 100%;
+}
+
+a {
+   text-decoration: none;
+   color: #06c;
+   list-style-type: none;
+}
+
+body {
+   font-size: 16px;
+   font-family: "Montserrat", sans-serif;
+   font-weight: 200;
+}
+
+li {
+   list-style: none;
+}
+
+/* styling header  */
+header {
+   background: rgb(15, 15, 15);
+   color: #fff;
+   font-weight: 200;
+   font-size: 13px;
+}
+
+nav {
+   width: 890px;
+   padding: 0 8px;
+   margin: 0 auto;
+}
+
+nav ul {
+   display: flex;
+   justify-content: space-between;
+}
+
+nav ul li a {
+   color: #fff;
+   display: inline-block;
+   padding: 14px 0 6px;
+   height: 25px;
+   opacity: 0.7;
+}
+
+nav ul li a:hover {
+   opacity: 1;
+}
+
+.logo-link img,
+.search-link img,
+.cart-link img {
+   width: 16px;
+}
+
+/*                                body                         */
+
+section {
+   text-align: center;
+   padding: 10px;
+}
+
+section ul {
+   display: flex;
+   justify-content: center;
+   font-weight: 400;
+   margin: 1% 0;
+}
+
+section ul a {
+   margin-right: 1.5em;
+}
+
+section ul li a:after {
+   font-family: "FontAwesome";
+   font-weight: 200;
+   content: "\f105";
+   padding-left: 8px;
+   font-size: 0.9em;
+}
+
+section ul a:hover {
+   color: black;
+}
+
+.title {
+   font-size: 3em;
+}
+
+.discription {
+   font-size: 2em;
+}
+
+/* mac book pro*/
+.macbook-pro {
+   background-color: #fafafa;
+}
+.macbook-pro .model {
+   margin-top: 1%;
+}
+.iPhone-11-Pro {
+   background-image: url(./resources/images/home/iphone11-pro-bg.jpg);
+   background-position: center;
+   background-repeat: no-repeat;
+   color: #fff;
+   height: 580px;
+   text-align: center;
+}
+
+.on-background h1 {
+   font-weight: 600;
+   font-size: 3em;
+   padding-top: 5%;
+}
+
+.on-background .discription {
+   padding: 10px 0px;
+   font-size: 1.5em;
+}
+
+.on-background .price {
+   color: #86868b;
+   font-size: 0.85;
+}
+
+.iPhone-11 {
+   background-image: url(./resources/images/home/iphone11-bg.jpg);
+   background-position: center;
+   color: black;
+   height: 580px;
+   text-align: center;
+   background-repeat: no-repeat;
+}
+
+/* side highlights. */
+
+.side2side {
+   display: flex;
+   justify-content: center;
+   /* setting the hight is mandatory fot it to be visible since we inserted it as a bg img */
+   height: 580px;
+   gap: 1%;
+}
+
+section.side2side {
+   padding: 7px;
+}
+
+.side2side p {
+   margin: 0.66em 4em;
+   font-weight: 400;
+   font-size: large;
+}
+.side2side h1 {
+   font-size: 2em;
+}
+
+/* laying the fundation(lay out ) for all teh others. i give this for the 1st side higlight at first but now we can give  all the others the same name and automate the layout (sitting side to sied with specific padding, margin, etc...)*/
+.left-heighlight,
+.right-heighlight {
+   background-position: center;
+   background-repeat: no-repeat;
+   width: 49%;
+   padding-top: 5%;
+}
+
+.side-heighlight1 .left-heighlight {
+   background-image: url(./resources/images/home/watch-series-5.jpg);
+}
+
+.side-heighlight1 .right-heighlight {
+   background-image: url(./resources/images/home/apple-card.jpg);
+}
+
+.side-heighlight2 {
+   .left-heighlight {
+      background-image: url(./resources/images/home/apple-tv-background.jpg);
+   }
+
+   .right-heighlight {
+      background-image: url(./resources/images/home/air-pods.jpg);
+      padding-top: 5%;
+      background-color: #000000;
+      color: #fff;
+      background-position: bottom;
+   }
+}
+
+.side-heighlight3 .left-heighlight {
+   background-image: url(./resources/images/home/macbook-pro.jpg);
+   background-color: #f5f5f78c;
+   padding-top: 5%;
+   background-position: bottom;
+}
+
+.side-heighlight3 .right-heighlight {
+   background-image: url(./resources/images/home/new-ipad.jpg);
+}
+
+.side-heighlight3 {
+   p {
+      font-weight: 400;
+   }
+}
+
+.tv-logo {
+   text-align: center;
+   justify-content: center;
+   padding-left: 10%;
+}
+
+.servant-logo {
+   margin: 30% 0;
+}
+
+.watch-more-wrapper a:after {
+   font-family: "FontAwesome";
+   font-weight: 900;
+   content: "\f144";
+   padding-left: 15px;
+}
+
+.watch-more-wrapper a:hover {
+   color: red;
+}
+
+.side-heighlight2 ul a:hover,
+.iPhone-11-Pro ul a:hover {
+   color: #fff;
+}
+
+/*                ### Footer styling             */
+
+/* footer general setup  */
+
+.footer {
+   /* background-color: rgba(250, 235, 212, 0.824); */
+   padding: 1.2em 6.9em;
+   color: #1d1d1f;
+   background-color: #f5f5f7;
+   margin-top: -8px;
+}
+
+/* footer links  */
+.footer-upper-note,
+.footer-last-para,
+.end-notes {
+   color: #444446;
+   font-size: 0.75em;
+   font-weight: 400;
+}
+
+/* .footer-links-column a{ */
+.footer-links-column a {
+   color: #515154dd;
+   font-size: 0.675em;
+   font-weight: 400;
+}
+
+footer a {
+   color: #515154f8;
+}
+.footer-upper-note {
+   color: #515154bd;
+}
+
+footer a:hover {
+   text-decoration: underline;
+}
+
+/* first link section of the footer  */
+.main-footer-links-wrapper {
+   display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
+   margin-top: 0.66em;
+}
+
+.footer-links-column ul li {
+   /* background-color: blueviolet; */
+   text-decoration: none;
+   /* space btween the links  */
+   margin: 0 auto;
+   /* padding-bottom: 0.33em; */
+}
+
+.footer-links-column ul {
+   /* space btween between banch of title and links   */
+   margin-bottom: 1.33em;
+}
+
+.footer-links-column h3 {
+   font-size: 11px;
+   font-weight: 600;
+}
+
+/*           2nd link section of z footer       */
+
+.footer-last-para {
+   margin-bottom: 0.66em;
+   a {
+      text-decoration: underline;
+      color: #06c;
+   }
+}
+
+.end-notes,
+.linkss {
+   display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
+}
+
+.linkss li:not(:last-child) {
+   border-right: 1px solid #ccc;
+}
+.linkss li {
+   margin: 0 0.25em;
+   padding: 0 5px;
+}
+
+footer img {
+   display: inline-block;
+   vertical-align: bottom;
+}
